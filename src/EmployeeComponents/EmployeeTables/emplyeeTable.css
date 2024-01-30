@@ -1,0 +1,50 @@
+
+/* Reset some default styling */
+body, table {
+    font-family: Arial, sans-serif;
+}
+
+/* Style for the responsive table container */
+.table-responsive {
+    overflow-x: auto;
+}
+
+/* Style for the table */
+.table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 1rem;
+}
+
+/* Style for the table header */
+.table th {
+	background-color: #f0f0f0;
+	color: #333333;
+	padding: 10px;
+	text-align: left;
+	border-right: 1px solid #dddddd; 
+}
+
+/* Remove right border for last cell in header */
+.table th:last-child {
+	border-right:none; 
+}
+
+/* Style for each row with hover effect */
+.table tr:hover {
+	background-color:#fafafa; 
+}
+
+/* Style for each cell in body of table */
+.table td {
+	padding: 10px;
+	text-align:left; 
+	border-top :1px solid #dddddd; 
+	border-right :1px solid #dddddd; 
+}
+
+/* Remove right border for last cell and top border for first row cells*/
+.table td:last-child, .table tr:first-child td{
+	border-right:none; 
+}
+
