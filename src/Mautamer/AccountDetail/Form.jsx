@@ -8,7 +8,8 @@ import { DemoContainer } from '@mui/x-date-pickers/internals/demo';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { DatePicker } from '@mui/x-date-pickers/DatePicker';
-
+import Stack from '@mui/material/Stack';
+import Button from '@mui/material/Button';
 
 const ADForm = () => {
 
@@ -134,7 +135,7 @@ const ADForm = () => {
                 </div>
                 <div className='row '>
                     <div className="col-md-6">
-                  
+
 
                         <Box
                             component="form"
@@ -144,8 +145,8 @@ const ADForm = () => {
                             noValidate
                             autoComplete="off"
                         >
-                             <LocalizationProvider dateAdapter={AdapterDayjs}>
-                             <DatePicker label="DOB" className='w-100' variant="filled" />
+                            <LocalizationProvider dateAdapter={AdapterDayjs}>
+                                <DatePicker label="DOB" className='w-100' variant="filled" />
 
                                 <DemoContainer components={['DatePicker']}>
                                 </DemoContainer>
@@ -166,7 +167,7 @@ const ADForm = () => {
                         </Box>
                     </div>
                 </div>
-                
+
                 <div className='row '>
                     <div className="col-md-6">
                         <Box
@@ -228,7 +229,7 @@ const ADForm = () => {
                 </div>
                 <div className='row '>
                     <div className="col-md-6">
-                   
+
                         <Box
                             component="form"
                             sx={{
@@ -237,8 +238,8 @@ const ADForm = () => {
                             noValidate
                             autoComplete="off"
                         >
-                             <LocalizationProvider dateAdapter={AdapterDayjs}>
-                             <DatePicker label="Issue" className='w-100' variant="filled" />
+                            <LocalizationProvider dateAdapter={AdapterDayjs}>
+                                <DatePicker label="Issue" className='w-100' variant="filled" />
 
                                 <DemoContainer components={['DatePicker']}>
                                 </DemoContainer>
@@ -247,7 +248,7 @@ const ADForm = () => {
                         </Box>
                     </div>
                     <div className="col-md-6">
-                   
+
                         <Box
                             component="form"
                             sx={{
@@ -256,8 +257,8 @@ const ADForm = () => {
                             noValidate
                             autoComplete="off"
                         >
-                             <LocalizationProvider dateAdapter={AdapterDayjs}>
-                             <DatePicker label="Expiry" className='w-100' variant="filled" />
+                            <LocalizationProvider dateAdapter={AdapterDayjs}>
+                                <DatePicker label="Expiry" className='w-100' variant="filled" />
 
                                 <DemoContainer components={['DatePicker']}>
                                 </DemoContainer>
@@ -268,7 +269,7 @@ const ADForm = () => {
                 </div>
                 <div className='row '>
                     <div className="col-md-6">
-                    <Box
+                        <Box
                             component="form"
                             sx={{
                                 '& > :not(style)': { m: 1, width: '25ch' },
@@ -276,13 +277,13 @@ const ADForm = () => {
                             noValidate
                             autoComplete="off"
                         >
-                             <FormControlLabel control={<Checkbox defaultChecked />} label="PAX Locked" />
-                             <FormControlLabel control={<Checkbox defaultChecked />} label="Duplicate" />
-                             <FormControlLabel control={<Checkbox defaultChecked />} label="Bed" />
+                            <FormControlLabel control={<Checkbox defaultChecked />} label="PAX Locked" />
+                            <FormControlLabel control={<Checkbox defaultChecked />} label="Duplicate" />
+                            <FormControlLabel control={<Checkbox defaultChecked />} label="Bed" />
                         </Box>
                     </div>
                     <div className="col-md-6">
-                    <Box
+                        <Box
                             component="form"
                             sx={{
                                 '& > :not(style)': { m: 1, width: '25ch' },
@@ -296,7 +297,12 @@ const ADForm = () => {
                 </div>
             </div>
             <div className="card-footer">
-                Footer
+                <Stack direction="row" spacing={2}>
+                    <Button variant="contained" color="success">
+                        Save
+                    </Button>
+
+                </Stack>
             </div>
         </div>
     )
