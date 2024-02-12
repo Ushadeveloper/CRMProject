@@ -23,13 +23,18 @@
 // import { EmpNavbar } from './EmployeeComponents/EmpNavbar';
 // import { EmpQualificationForm } from './EmployeeComponents/EmployeeQualification/EmpQualificationForm';
 
-import ADForm from "./Mautamer/AccountDetail/Form";
+// import ADForm from "./Mautamer/AccountDetail/Form";
+import { FormADetail } from "./Mautamer/AccountDetail/Form2";
+import { FormAduit } from "./Mautamer/Audit/Form";
+import { FormTicketD } from "./Mautamer/TicketDetail/Form";
 
 function App() {
   return (
     <>
-
-      <ADForm />
+    <FormTicketD/>
+      <FormAduit />
+      <FormADetail/>
+      {/* <ADForm /> */}
       {/* <BrowserRouter>
       <EmpNavbar />
         <Routes>
